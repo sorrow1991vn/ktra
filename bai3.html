@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number1" value="number "></br></br>
+
+<div>
+    <label>
+        <input type="button" value="/2" onclick="thuong()">
+    </label>
+    <label>
+        <input type="button" value="*2" onclick="tich()" >
+    </label>
+</div>
+<p id="result"></p>
+</body>
+<script>
+    function tich() {
+        let number = document.getElementById("number1").value;
+        tich = number*2;
+        document.getElementById("result").innerHTML="Ket qua la : "+tich;
+    }
+    function thuong(){
+        let number = document.getElementById("number1").value;
+        thuong = number/2;
+        document.getElementById("result").innerHTML="Ket qua la : " +thuong;
+    }
+</script>
+</html>
